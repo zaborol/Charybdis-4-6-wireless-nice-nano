@@ -114,6 +114,56 @@
             >;
         };
 
+NAV {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp UP    &trans     &trans  &trans    &kp N7           &kp N8                &kp N9          &kp N0  &kp HOME  &kp F1
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &kp N4           &u_mt RIGHT_SHIFT N5  &u_mt RCTRL N6  &trans  &trans    &kp F10
+&trans  &trans    &trans    &trans     &trans  &trans    &kp N1           &kp N2                &kp N3          &trans  &trans    &kp F20
+                            &trans     &trans  &trans    &lt 3 BACKSPACE  &kp LSHFT &trans  &trans &trans
+            >;
+        };
+
+        SYMNUM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS                 &kp KP_MULTIPLY   &kp LPAR              &kp RPAR              &kp DEL
+&trans      &trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  &kp GRAVE
+&trans      &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS  &kp PLUS                 &kp LBRC          &kp RBRC              &kp PIPE              &kp TILDE
+                                       &trans      &trans    &mo 3        &trans     &trans &trans  &trans &trans
+            >;
+        };
+
+        FUN {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &kp F1  &kp F2   &kp F3   &kp F4     &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &bt BT_CLR
+&trans  &kp DEL  &kp F5  &kp F6   &kp F7   &kp F8     &out OUT_TOG  &kp K_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp LALT
+&trans  &trans   &kp F9  &kp F10  &kp F11  &kp F12    &trans        &trans            &trans             &trans           &trans        &to 0
+                         &trans   &trans   &trans     &trans        &trans &trans  &trans &trans
+            >;
+        };
+
+        AUTO-MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans &trans  &trans &trans
+            >;
+        };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans &trans  &trans &trans
+            >;
+        };
+
 
     };
 };
