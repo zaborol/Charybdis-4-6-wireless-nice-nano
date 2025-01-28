@@ -1,3 +1,3 @@
 # ch-4-6-wl-nn
 
-1
+4-6 wireless zmk
