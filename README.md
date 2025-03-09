@@ -1,3 +1,4 @@
-# ch-4-6-wl-nn try
+# Charybdis-4-6-wireless-nice-nano
 
-4-6 wireless zmk
+eng: custom graphite-like layout
+rus: custom phonetic layout over eng 
