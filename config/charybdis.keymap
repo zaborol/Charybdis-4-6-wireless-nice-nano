@@ -29,18 +29,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&to ENG>
-                , <&macro_press &kp LALT &kp LSHFT>
-                , <&macro_release &kp LALT &kp LSHFT>
+                = <&to 0 &kp LA(LSHFT)>
                 ;
         };
         ruen_ru: ruen_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT &kp LSHFT>
-                , <&macro_release &kp LALT &kp LSHFT>
-                , <&to 1>
+                = <&to 1 &kp LA(LSHFT)>
                 ;
         };
         ruen_rus: ruen_rus {
