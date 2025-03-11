@@ -104,9 +104,17 @@
             bindings = <&caps_word>;
             key-positions = <17 18>;
         };
-    };
-
+    };  
+    
     behaviors {
+        hrm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
         u_mt: u_mt {
             compatible = "zmk,behavior-hold-tap";
             label = "u_mt";
@@ -141,17 +149,17 @@
 
         ENG {
             bindings = <
-                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &kp N0
-                &kp ESC    &kp J         &kp L        &kp D         &kp B              &kp W            &kp V              &kp P               &kp O          &kp U      &kp APOS      &trans
-                &kp SEMI   &lt SYM_ENG R &mt LALT N   &mt LSHIFT T  &mt LCTRL S        &mt LGUI G       &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
-                &kp COLON  &kp Q         &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
-                           &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_ru
+                &to 1      &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &kp N0
+                &kp ESC    &kp J          &kp L        &kp D         &kp B              &kp W            &kp V              &kp P               &kp O          &kp U      &kp APOS      &trans
+                &kp SEMI   &hrm SYM_ENG R &hrm LALT N  &hrm LSHIFT T &hrm LCTRL S        &mt LGUI G       &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
+                &kp COLON  &kp Q          &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
+                           &kp TAB        &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_ru
             >;
         };
 
         RUS {
             bindings = <
-                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
+                &to 0      &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
                 &kp ESC    &kp Q         &kp K        &kp L         &kp LESS_THAN      &kp O            &kp I              &kp G               &kp J          &kp E      &kp GREATER_THAN &kp APOS
                 &kp SEMI   &kp H         &kp Y        &kp N         &kp C              &kp U            &kp R              &kp D               &kp F          &kp T      &kp B            &kp FSLH
                 &kp COLON  &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A               &kp S          &kp Z      &kp M            &kp LS(FSLH)
