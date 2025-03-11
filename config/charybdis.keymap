@@ -54,7 +54,7 @@
             #binding-cells = <1>;
             bindings = <&kp LA(LSHFT)>, <&macro_param_1to1>, <&sh MACRO_PLACEHOLDER>, <&kp LA(LSHFT)>;
         };
-        ru_semi: en_semi {
+        ru_SEMI: en_semi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LSHFT)>, <&kp SEMI>, <&kp LA(LSHFT)>;
