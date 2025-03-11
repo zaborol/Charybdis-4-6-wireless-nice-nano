@@ -29,9 +29,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT &kp LSHFT>
+                = <&to ENG>
+                , <&macro_press &kp LALT &kp LSHFT>
                 , <&macro_release &kp LALT &kp LSHFT>
-                , <&to ENG>
                 ;
         };
         ruen_ru: ruen_ru {
@@ -40,9 +40,16 @@
             bindings
                 = <&macro_press &kp LALT &kp LSHFT>
                 , <&macro_release &kp LALT &kp LSHFT>
-                , <&to RUS>
+                , <&to 1>
                 ;
         };
+        ruen_rus: ruen_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to 1 &kp LA(LSHFT)>
+                ;
+        };        
     };
 };
 
@@ -104,8 +111,8 @@
             bindings = <&caps_word>;
             key-positions = <17 18>;
         };
-    };  
-    
+    };
+
     behaviors {
         hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -149,9 +156,9 @@
 
         ENG {
             bindings = <
-                &to 1      &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &kp N0
+                &ruen_rus  &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &kp N0
                 &kp ESC    &kp J          &kp L        &kp D         &kp B              &kp W            &kp V              &kp P               &kp O          &kp U      &kp APOS      &trans
-                &kp SEMI   &hrm SYM_ENG R &hrm LALT N  &hrm LSHIFT T &hrm LCTRL S        &mt LGUI G       &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
+                &kp SEMI   &lt SYM_ENG R  &hrm LALT N  &hrm LSHIFT T &hrm LCTRL S       &hrm LGUI G      &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
                 &kp COLON  &kp Q          &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
                            &kp TAB        &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_ru
             >;
