@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LA(LSHFT)>, <&macro_param_1to1>, <&sh MACRO_PLACEHOLDER>, <&kp LA(LSHFT)>;
-        };            
+        };
         ru_semi: en_semi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -63,7 +63,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LSHFT)>, <&sh COLON>, <&kp LA(LSHFT)>;
-        };        
+        };
     };
 };
 
@@ -84,8 +84,8 @@
         MiddleClickRight {
             bindings = <&mkp MCLK>;
             key-positions = <21 22>;
-        }
-
+        };
+        
         ParaLeft {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <4 16>;
