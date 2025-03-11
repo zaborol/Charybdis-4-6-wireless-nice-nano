@@ -164,7 +164,7 @@
             bindings = <
                 &to 0      &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
                 &kp ESC    &kp Q         &kp K        &kp L         &kp LESS_THAN      &kp O            &kp I              &kp G               &kp J          &kp E      &kp GREATER_THAN &kp APOS
-                &kp SEMI   &kp H         &kp Y        &kp N         &kp C              &kp U            &kp R              &kp D               &kp F          &kp T      &kp B            &kp FSLH
+                &kp SEMI   &lt SYM_RUS H &hrm LALT  Y &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D         &mt LSHIFT F   &mt LALT T &lt SYM_RUS B    &kp FSLH
                 &kp COLON  &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A               &kp S          &kp Z      &kp M            &kp LS(FSLH)
                            &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_en
             >;
