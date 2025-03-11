@@ -60,7 +60,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LSHFT)>, <&kp SEMI>, <&kp LA(LSHFT)>;
         };
-        ru_colon1: ru_colon {
+        ru_colon1: ru_colon1 {
             wait-ms = <30>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
