@@ -60,21 +60,11 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LSHFT)>, <&kp SEMI>, <&kp LA(LSHFT)>;
         };
-        ru_colon1: ru_colon1 {
+        ru_colon: ru_colon {
             wait-ms = <30>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LSHFT)>, <&sh COLON>, <&kp LA(LSHFT)>;
-        };
-        ru_colon: ru_colon {
-wait-ms = <40>;
-tap-ms = <40>;
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-            <&macro_press   &kp LALT>
-            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
-            , <&macro_release &kp LALT>;
+            bindings = <&kp LA(LSHFT)>,  <&macro_press &kp LSHFT>, <&macro_tap &kp COLON>, <&macro_release &kp LSHFT>, <&kp LA(LSHFT)>;
         };
     };
 };
