@@ -43,13 +43,13 @@
                 , <&to 1>
                 ;
         };
-        ruen_rus: ruen_ru {
+        ruen_rus: ruen_rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&to 1 &kp LA(LSHFT)>
                 ;
-        };        
+        };
     };
 };
 
