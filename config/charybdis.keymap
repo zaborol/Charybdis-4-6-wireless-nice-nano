@@ -40,31 +40,31 @@
                 ;
         };
         en: en {
-            wait-ms = <20>;
+
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_tap &kp LA(LSHFT)>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_tap &kp LA(LSHFT)>;
         };
         sh: sh {
-            wait-ms = <20>;
+
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_press &kp LSHFT>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_release &kp LSHFT>;
         };
-        ensh: ensh {
-            wait-ms = <20>;
+        esh: esh {
+
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_tap &kp LA(LSHFT)>, <&macro_press &kp LSHFT>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_release &kp LSHFT>, <&macro_tap &kp LA(LSHFT)>;
         };
         ru_semi: en_semi {
-            wait-ms = <20>;
+
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LSHFT)>, <&kp SEMI>, <&kp LA(LSHFT)>;
         };
         ru_colon: ru_colon {
-            wait-ms = <20>;
+
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp LA(LSHFT)>,  <&macro_press &kp LSHFT>, <&macro_tap &kp COLON>, <&macro_release &kp LSHFT>, <&macro_tap &kp LA(LSHFT)>;
@@ -175,20 +175,20 @@
 
         ENG {
             bindings = <
-                &trans     &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &bootloader
+                &kp PSCRN  &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &bootloader
                 &kp ESC    &kp J          &kp L        &kp D         &kp B              &kp W            &kp V              &kp P               &kp O          &kp U      &kp APOS      &trans
                 &kp SEMI   &lt SYM_ENG R  &hrm LALT N  &hrm LSHIFT T &hrm LCTRL S       &hrm LGUI G      &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
                 &kp COLON  &kp Q          &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
-                           &kp TAB        &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_ru
+                           &kp TAB        &kp RCLK     &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_ru
             >;
         };
 
         RUS {
             bindings = <
-                &en SEMI      &sh N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
-                &ensh SEMI    &kp Q         &kp K        &kp L         &kp COMMA          &kp O            &kp I              &kp G               &kp J          &kp E      &kp DOT          &kp APOS
-                &ru_semi   &lt SYM_RUS H &hrm LALT  Y &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D         &mt LSHIFT F   &mt LALT T &lt SYM_RUS B    &kp FSLH
-                &ru_colon  &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A               &kp S          &kp Z      &kp M            &kp LS(FSLH)
+                &kp PSCR   &sh N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
+                &kp ESC    &kp Q         &kp K        &kp L         &kp COMMA          &kp O            &kp I              &kp G               &kp J          &kp E      &kp DOT          &kp APOS
+                &en SEMI   &lt SYM_RUS H &hrm LALT  Y &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D         &mt LSHIFT F   &mt LALT T &lt SYM_RUS B    &kp FSLH
+                &en COLON  &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A               &kp S          &kp Z      &kp M            &kp LS(FSLH)
                            &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_en
             >;
         };
@@ -199,7 +199,7 @@
                 &kp ESC    &kp J      &kp L      &kp D         &kp B              &kp W            &kp V              &kp P      &kp O          &kp U      &kp P      &trans
                 &kp SEMI   &kp R      &kp N      &kp T         &kp S              &kp G            &kp K              &kp H      &kp A          &kp E      &kp I      &kp DOT
                 &kp COLON  &kp Q      &kp X      &kp M         &kp C              &kp Z            &kp Y              &kp F      &kp UNDER      &kp FSLH   &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK   &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
+                           &kp TAB    &kp RCLK   &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
             >;
         };
 
@@ -209,26 +209,26 @@
                 &kp ESC    &kp J      &kp L      &kp D         &kp B              &kp W            &kp V              &kp P      &kp O          &kp U      &kp P      &trans
                 &kp SEMI   &kp R      &kp N      &kp T         &kp S              &kp G            &kp K              &kp H      &kp A          &kp E      &kp I      &kp DOT
                 &kp COLON  &kp Q      &kp X      &kp M         &kp C              &kp Z            &kp Y              &kp F      &kp UNDER      &kp FSLH   &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK   &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
+                           &kp TAB    &kp RCLK   &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
             >;
         };
 
         SYM_ENG {
             bindings = <
                 &kp PSCRN  &kp N1     &kp N2           &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0     &kp N4
-                &kp ESC    &kp J      &kp LEFT_BRACKET &kp PERCENT   &kp RIGHT_BRACKET  &kp DQT          &kp QUESTION       &kp LBRC            &sh N1         &kp RBRC   &kp APOS   &trans
-                &kp SEMI   &kp DOLLAR &kp LPAR         &kp ASTRK     &kp RPAR           &kp PLUS         &kp MINUS          &kp LT              &kp EQUAL      &kp GT     &sh N2     &kp DOT
+                &kp ESC    &none      &kp LBKT         &kp PERCENT   &kp RBKT           &kp DQT          &kp QUESTION       &kp LBRC            &sh N1         &kp RBRC   &kp APOS   &trans
+                &kp SEMI   &kp DLLR   &kp LPAR         &kp STAR      &kp RPAR           &kp PLUS         &kp MINUS          &kp LT              &kp EQUAL      &kp GT     &sh N2     &kp DOT
                 &kp COLON  &none      &kp BSLH         &kp TILDE     &kp PIPE           &kp CARET        &kp AMPS           &kp HASH            &kp UNDER      &kp FSLH   &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK         &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &kp LA(LSHIFT)
+                           &kp TAB    &kp RCLK         &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &kp LA(LSHIFT)
             >;
         };
 
         SYM_RUS {
             bindings = <
                 &kp PSCRN  &kp N1     &kp N2           &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0     &kp N5
-                &kp ESC    &kp J      &kp LEFT_BRACKET &kp PERCENT   &kp RIGHT_BRACKET  &kp DQT          &kp QUESTION       &kp LBRC            &sh N1         &kp RBRC   &kp APOS   &trans
-                &kp SEMI   &kp DOLLAR &kp LPAR         &kp ASTRK     &kp RPAR           &kp PLUS         &kp MINUS          &kp LT              &kp EQUAL      &kp GT     &ensh N2     &kp DOT
-                &kp COLON  &none      &kp BSLH         &kp TILDE     &kp PIPE           &kp CARET        &kp AMPS           &kp HASH            &kp UNDER      &kp FSLH   &kp GRAVE  &kp COMMA
+                &kp ESC    &none      &en LBKT         &kp PERCENT   &en RBKT           &kp DQT          &sh N7             &en LBRC            &sh N1         &en RBRC   &en APOS   &trans
+                &kp SEMI   &en DOLLAR &kp LPAR         &kp ASTRK     &kp RPAR           &kp PLUS         &kp MINUS          &en LT              &kp EQUAL      &en GT     &en AT     &kp FSLH
+                &kp COLON  &none      &kp BSLH         &en TILDE     &en PIPE           &en CARET        &en AMPS           &en HASH            &kp UNDER      &kp NUBS   &en GRAVE  &kp LS(FSLH)
                            &kp TAB    &kp RCLK         &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB             &kp LA(LSHIFT)
             >;
         };
