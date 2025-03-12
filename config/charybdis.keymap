@@ -40,31 +40,34 @@
                 ;
         };
         en: en {
+            wait-ms = <20>;
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&kp LA(LSHFT)>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp LA(LSHFT)>;
+            bindings = <&macro_tap &kp LA(LSHFT)>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_tap &kp LA(LSHFT)>;
         };
         sh: sh {
+            wait-ms = <20>;
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_press &kp LSHFT>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_release &kp LSHFT>;
         };
         ensh: ensh {
+            wait-ms = <20>;
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&kp LA(LSHFT)>, <&macro_param_1to1>, <&sh MACRO_PLACEHOLDER>, <&kp LA(LSHFT)>;
+            bindings = <&macro_tap &kp LA(LSHFT)>, <&macro_param_1to1>, <&macro_tap &sh MACRO_PLACEHOLDER>, <&macro_tap &kp LA(LSHFT)>;
         };
-        ru_SEMI: en_semi {
-            wait-ms = <30>;
+        ru_semi: en_semi {
+            wait-ms = <20>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LSHFT)>, <&kp SEMI>, <&kp LA(LSHFT)>;
         };
         ru_colon: ru_colon {
-            wait-ms = <50>;
+            wait-ms = <20>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LSHFT)>,  <&macro_press &kp LSHFT>, <&macro_tap &kp COLON>, <&macro_release &kp LSHFT>, <&kp LA(LSHFT)>;
+            bindings = <&macro_tap &kp LA(LSHFT)>,  <&macro_press &kp LSHFT>, <&macro_tap &kp COLON>, <&macro_release &kp LSHFT>, <&macro_tap &kp LA(LSHFT)>;
         };
     };
 };
@@ -172,7 +175,7 @@
 
         ENG {
             bindings = <
-                &trans     &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &bootloader
+                &trans     &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &kp N0
                 &kp ESC    &kp J          &kp L        &kp D         &kp B              &kp W            &kp V              &kp P               &kp O          &kp U      &kp APOS      &trans
                 &kp SEMI   &lt SYM_ENG R  &hrm LALT N  &hrm LSHIFT T &hrm LCTRL S       &hrm LGUI G      &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
                 &kp COLON  &kp Q          &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
@@ -182,9 +185,9 @@
 
         RUS {
             bindings = <
-                &en SEMI      &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
-                &kp ESC    &kp Q         &kp K        &kp L         &kp COMMA          &kp O            &kp I              &kp G               &kp J          &kp E      &kp DOT          &kp APOS
-                &ru_SEMI   &lt SYM_RUS H &hrm LALT  Y &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D         &mt LSHIFT F   &mt LALT T &lt SYM_RUS B    &kp FSLH
+                &en SEMI      &sh N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp N1
+                &ensh SEMI    &kp Q         &kp K        &kp L         &kp COMMA          &kp O            &kp I              &kp G               &kp J          &kp E      &kp DOT          &kp APOS
+                &ru_semi   &lt SYM_RUS H &hrm LALT  Y &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D         &mt LSHIFT F   &mt LALT T &lt SYM_RUS B    &kp FSLH
                 &ru_colon  &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A               &kp S          &kp Z      &kp M            &kp LS(FSLH)
                            &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &ruen_en
             >;
