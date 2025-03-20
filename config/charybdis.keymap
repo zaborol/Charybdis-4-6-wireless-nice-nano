@@ -80,16 +80,16 @@
             bindings = <&bootloader>;
             key-positions = <11 12>;
         };
-        
+
         combo_delete {
-            bindings = <&bootloader>;
+            bindings = <&kp DELETE>;
             key-positions = <38 39>;
         };
-        
+
         combo_backspace {
-            bindings = <&bootloader>;
+            bindings = <&kp BSPC>;
             key-positions = <44 45>;
-        };             
+        };
 
         LeftClickRight {
             bindings = <&mkp LCLK>;
