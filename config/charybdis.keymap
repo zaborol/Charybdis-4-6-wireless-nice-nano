@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_tap &kp LA(LSHFT)>, <&macro_press &kp LSHFT>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_release &kp LSHFT>, <&macro_tap &kp LA(LSHFT)>;
-        };        
+        };
     };
 };
 
@@ -84,7 +84,7 @@
 
         combo_bootloader_right {
             bindings = <&bootloader>;
-            key-positions = <11 12>;
+            key-positions = <10 11>;
         };
 
         combo_delete {
@@ -217,108 +217,108 @@
                 &kp PSCRN  &kp N1         &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0        &kp INS
                 &kp ESC    &kp J          &kp L        &kp D         &kp B              &kp W            &kp V              &kp P               &kp O          &kp U      &kp APOS      &trans
                 &kp SEMI   &lt SYM_ENG R  &hrm LALT N  &hrm LSHIFT T &hrm LCTRL S       &hrm LGUI G      &mt LGUI K         &mt LCTRL H         &mt LSHIFT A   &mt LALT E &lt SYM_ENG I &kp DOT
-                &kp COLON  &kp Q          &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
+                &sh SEMI   &kp Q          &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F               &kp UNDER      &kp FSLH   &kp GRAVE     &kp COMMA
                            &kp TAB        &kp RCLK     &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &td_ruen_ru
             >;
         };
 
         RUS {
             bindings = <
-                &kp PSCRN  &sh N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0           &kp INS
-                &kp ESC    &kp Q         &kp K        &kp L         &kp COMMA          &kp O            &kp I              &kp G               &kp J          &kp E      &kp DOT          &kp APOS
-                &en SEMI   &lt SYM_RUS H &hrm LALT  Y &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D         &mt LSHIFT F   &mt LALT T &lt SYM_RUS B    &kp FSLH
-                &sh SEMI   &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A               &kp S          &kp Z      &td_hard         &sh FSLH
-                           &kp TAB       &kp RCLK     &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &td_ruen_en
+                &kp PSCRN  &sh N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9      &kp N0         &kp INS
+                &kp ESC    &kp Q         &kp K        &kp L         &kp COMMA          &kp O            &kp I              &kp G              &kp J          &kp E       &kp DOT        &kp APOS
+                &sh N4     &lt SYM_RUS H &hrm LALT Y  &hrm LSHIFT N &hrm LCTRL C       &hrm LGUI U      &mt LGUI R         &mt LCTRL D        &mt LSHIFT F   &mt LALT T  &lt SYM_RUS B  &kp FSLH
+                &sh N6     &kp W         &kp LBKT     &kp V         &kp X              &kp P            &kp SEMI           &kp A              &kp S          &kp Z       &td_hard       &sh FSLH
+                           &kp TAB       &kp RCLK     &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER  &td_ruen_en
             >;
         };
 
         QWERTY {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2     &kp N3        &kp N4             &kp N5           &kp N6             &kp N7     &kp N8         &kp N9     &kp N0     &kp N2
-                &kp ESC    &kp J      &kp L      &kp D         &kp B              &kp W            &kp V              &kp P      &kp O          &kp U      &kp P      &trans
-                &sh N4     &kp R      &kp N      &kp T         &kp S              &kp G            &kp K              &kp H      &kp A          &kp E      &kp I      &kp DOT
-                &sh N6     &kp Q      &kp X      &kp M         &kp C              &kp Z            &kp Y              &kp F      &kp UNDER      &kp FSLH   &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK   &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9      &kp N0         &kp N2
+                &kp ESC    &kp J         &kp L        &kp D         &kp B              &kp W            &kp V              &kp P              &kp O          &kp U       &kp P          &trans
+                &sh N4     &kp R         &kp N        &kp T         &kp S              &kp G            &kp K              &kp H              &kp A          &kp E       &kp I          &kp DOT
+                &sh N6     &kp Q         &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F              &kp UNDER      &kp FSLH    &kp GRAVE      &kp COMMA
+                           &kp TAB       &kp RCLK     &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
 
         JCUKEN {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2     &kp N3        &kp N4             &kp N5           &kp N6             &kp N7     &kp N8         &kp N9     &kp N0     &kp N3
-                &kp ESC    &kp J      &kp L      &kp D         &kp B              &kp W            &kp V              &kp P      &kp O          &kp U      &kp P      &trans
-                &kp SEMI   &kp R      &kp N      &kp T         &kp S              &kp G            &kp K              &kp H      &kp A          &kp E      &kp I      &kp DOT
-                &kp COLON  &kp Q      &kp X      &kp M         &kp C              &kp Z            &kp Y              &kp F      &kp UNDER      &kp FSLH   &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK   &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9      &kp N0         &kp N3
+                &kp ESC    &kp J         &kp L        &kp D         &kp B              &kp W            &kp V              &kp P              &kp O          &kp U       &kp P          &trans
+                &kp SEMI   &kp R         &kp N        &kp T         &kp S              &kp G            &kp K              &kp H              &kp A          &kp E       &kp I          &kp DOT
+                &kp COLON  &kp Q         &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F              &kp UNDER      &kp FSLH    &kp GRAVE      &kp COMMA
+                           &kp TAB       &kp RCLK     &kp BSPC      &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
 
         SYM_ENG {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2           &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0     &kp N4
-                &kp ESC    &none      &kp LBKT         &sh N5        &kp RBKT           &sh APOS         &sh FSLH           &kp LBRC            &sh N1         &kp RBRC   &kp APOS   &trans
-                &kp SEMI   &sh N4     &sh N9           &sh N8        &sh N0             &sh EQUAL        &kp MINUS          &sh COMMA           &kp EQUAL      &sh DOT    &sh N2     &kp DOT
-                &kp COLON  &sh N5     &kp BSLH         &sh GRAVE     &sh BSLH           &sh N6           &sh N7             &sh N3              &sh MINUS      &kp FSLH   &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK         &kp DEL       &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER   &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9      &kp N0         &kp N4
+                &kp ESC    &none         &kp LBKT     &sh N5        &kp RBKT           &sh APOS         &sh FSLH           &kp LBRC           &sh N1         &kp RBRC    &kp APOS       &trans
+                &kp SEMI   &sh N4        &sh N9       &sh N8        &sh N0             &sh EQUAL        &kp MINUS          &sh COMMA          &kp EQUAL      &sh DOT     &sh N2         &kp DOT
+                &sh SEMI   &sh N5        &kp BSLH     &sh GRAVE     &sh BSLH           &sh N6           &sh N7             &sh N3             &sh MINUS      &kp FSLH    &kp GRAVE      &kp COMMA
+                           &kp TAB       &kp RCLK     &kp DEL       &lt NAV_ENG SPACE  &kp LCLK         &kp TAB            &lt NUM_ENG ENTER  &kp LA(LSHIFT)
             >;
         };
 
         SYM_RUS {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2           &kp N3        &kp N4             &kp N5           &kp N6             &kp N7              &kp N8         &kp N9     &kp N0     &kp N5
-                &kp ESC    &none      &en LBKT         &sh N5        &en RBKT           &sh N2           &sh N7             &en LBRC            &sh N1         &en RBRC   &en APOS   &kp GRAVE
-                &sh N4     &ensh N4   &sh N9           &sh N8        &sh N0             &sh EQUAL        &kp MINUS          &ensh COMMA         &kp EQUAL      &ensh DOT  &ensh N2   &kp FSLH
-                &sh N6     &rush N5   &kp BSLH         &ensh GRAVE   &ensh BSLH         &ensh N6         &ensh N7           &ensh N3            &sh MINUS      &sh BSLH   &en GRAVE  &sh FSLH
-                           &kp TAB    &kp RCLK         &kp DEL       &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB             &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8          &kp N9      &kp N0        &kp N5
+                &kp ESC    &none         &en LBKT     &sh N5        &en RBKT           &sh N2           &sh N7             &en LBRC           &sh N1          &en RBRC    &en APOS      &kp GRAVE
+                &sh N4     &ensh N4      &sh N9       &sh N8        &sh N0             &sh EQUAL        &kp MINUS          &ensh COMMA        &kp EQUAL       &ensh DOT   &ensh N2      &kp FSLH
+                &sh N6     &rush N3      &kp BSLH     &ensh GRAVE   &ensh BSLH         &ensh N6         &ensh N7           &ensh N3           &sh MINUS       &sh BSLH    &en GRAVE     &sh FSLH
+                           &kp TAB       &kp RCLK     &kp DEL       &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
 
         NAV_ENG {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2     &kp N3        &kp N4             &kp N5           &kp N6             &kp N7          &kp N8         &kp N9      &kp N0     &kp N6
-                &kp ESC    &kp J      &kp L      &kp LC(F)     &kp LC(R)          &kp W            &kp K_CMENU        &kp LC(LS(TAB)) &kp PG_UP      &kp LC(TAB) &kp P      &none
-                &kp SEMI   &kp LC(A)  &kp LALT   &kp LSHIFT    &kp LCTRL          &kp LC(FSLH)     &kp HOME           &kp LEFT        &kp UP         &kp DOWN    &kp RIGHT  &kp END
-                &kp COLON  &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)          &kp Z            &kp Y              &kp F           &sh MINUS      &kp PG_DN   &kp APOS   &none
-                           &kp TAB    &kp RCLK   &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB         &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8          &kp N9      &kp N0        &kp N6
+                &kp ESC    &kp J         &kp L        &kp LC(F)     &kp LC(R)          &kp W            &kp K_CMENU        &kp LC(LS(TAB))    &kp PG_UP       &kp LC(TAB) &kp P         &none
+                &kp SEMI   &kp LC(A)     &kp LALT     &kp LSHIFT    &kp LCTRL          &kp LC(FSLH)     &kp HOME           &kp LEFT           &kp UP          &kp DOWN    &kp RIGHT     &kp END
+                &kp COLON  &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)          &kp Z            &kp Y              &kp F              &sh MINUS       &kp PG_DN   &kp APOS      &none
+                           &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
 
         NAV_RUS {
             bindings = <
-                &none      &kp N1     &kp N2     &kp N3        &kp N4             &kp N5           &kp N6             &kp N7          &kp N8         &kp N9      &kp N0     &kp N7
-                &kp ESC    &none      &none      &kp LC(F)     &kp LC(R)          &none            &kp K_CMENU        &kp LC(LS(TAB)) &kp PG_UP      &kp LC(TAB) &kp APOS   &none
-                &none      &kp LC(A)  &kp LALT   &kp LSHIFT    &kp LCTRL          &kp LC(FSLH)     &kp HOME           &kp LEFT        &kp UP         &kp DOWN    &kp RIGHT  &kp END
-                &none      &kp LC(Z)  &kp LC(X)  &kp LC(C)     &kp LC(V)          &kp K_CMENU      &none              &none           &none          &kp PG_DN   &none      &none
-                           &kp TAB    &kp RCLK   &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB         &none
+                &none      &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9       &kp N0        &kp N7
+                &kp ESC    &none         &none        &kp LC(F)     &kp LC(R)          &none            &kp K_CMENU        &kp LC(LS(TAB))    &kp PG_UP      &kp LC(TAB)  &kp APOS      &none
+                &none      &kp LC(A)     &kp LALT     &kp LSHIFT    &kp LCTRL          &kp LC(FSLH)     &kp HOME           &kp LEFT           &kp UP         &kp DOWN     &kp RIGHT     &kp END
+                &none      &kp LC(Z)     &kp LC(X)    &kp LC(C)     &kp LC(V)          &kp K_CMENU      &none              &none              &none          &kp PG_DN    &none         &none
+                           &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &none
             >;
         };
 
         NUM_ENG {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2     &kp N3        &kp N4             &kp N5           &kp N6             &kp N7     &kp N8         &kp N9     &kp N0     &kp N8
-                &kp ESC    &trans     &kp F7     &kp F8        &kp F9             &kp F10          &trans             &kp N7     &kp N8         &kp N9     &kp APOS   &trans
-                &trans     &trans     &kp F4     &kp F5        &kp F6             &kp F11          &kp MINUS          &kp N4     &kp N5         &kp N6     &kp N0     &kp DOT
-                &trans     &trans     &kp F1     &kp F2        &kp F3             &kp F12          &trans             &kp N1     &kp N2         &kp N3     &kp GRAVE  &kp COMMA
-                           &kp TAB    &kp RCLK   &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9       &kp N0        &kp N8
+                &kp ESC    &trans        &kp F7       &kp F8        &kp F9             &kp F10          &trans             &kp N7             &kp N8         &kp N9       &kp APOS      &trans
+                &trans     &trans        &kp F4       &kp F5        &kp F6             &kp F11          &kp MINUS          &kp N4             &kp N5         &kp N6       &kp N0        &kp DOT
+                &trans     &trans        &kp F1       &kp F2        &kp F3             &kp F12          &trans             &kp N1             &kp N2         &kp N3       &kp GRAVE     &kp COMMA
+                           &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
 
         NUM_RUS {
             bindings = <
-                &kp PSCRN  &kp N1     &kp N2     &kp N3        &kp N4             &kp N5           &kp N6             &kp N7     &kp N8         &kp N9     &kp N0     &kp N9
-                &kp ESC    &kp J      &kp L      &kp D         &kp B              &kp W            &kp V              &kp P      &kp O          &kp U      &kp P      &trans
-                &sh N4     &kp R      &kp N      &kp T         &kp S              &kp G            &kp K              &kp H      &kp A          &kp E      &kp I      &kp FSLH
-                &sh N6     &kp Q      &kp X      &kp M         &kp C              &kp Z            &kp Y              &kp F      &kp UNDER      &kp FSLH   &en GRAVE  &sh FSLH
-                           &kp TAB    &kp RCLK   &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB    &kp LA(LSHIFT)
+                &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9       &kp N0        &kp N9
+                &kp ESC    &kp J         &kp L        &kp D         &kp B              &kp W            &kp V              &kp P              &kp O          &kp U        &kp P         &trans
+                &sh N4     &kp R         &kp N        &kp T         &kp S              &kp G            &kp K              &kp H              &kp A          &kp E        &kp I         &kp FSLH
+                &sh N6     &kp Q         &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F              &kp UNDER      &kp FSLH     &en GRAVE     &sh FSLH
+                           &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
 
         AUTO_MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans &trans  &trans &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
