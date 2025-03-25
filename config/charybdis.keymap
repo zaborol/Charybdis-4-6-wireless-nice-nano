@@ -59,7 +59,7 @@
             bindings = <&macro_press &kp LSHFT>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_release &kp LSHFT>;
         };
         zct: zct {
-            wait-ms = <20>;
+            wait-ms = <40>;
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_press &kp LCTRL>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>, <&macro_release &kp LCTRL>;
@@ -311,9 +311,9 @@
         NUM_RUS {
             bindings = <
                 &kp PSCRN  &kp N1        &kp N2       &kp N3        &kp N4             &kp N5           &kp N6             &kp N7             &kp N8         &kp N9       &kp N0        &kp N9
-                &kp ESC    &kp J         &kp L        &kp D         &kp B              &kp W            &kp V              &kp P              &kp O          &kp U        &kp P         &trans
-                &sh N4     &kp R         &kp N        &kp T         &kp S              &kp G            &kp K              &kp H              &kp A          &kp E        &kp I         &kp FSLH
-                &sh N6     &kp Q         &kp X        &kp M         &kp C              &kp Z            &kp Y              &kp F              &kp UNDER      &kp FSLH     &en GRAVE     &sh FSLH
+                &kp ESC    &kp J         &kp L        &kp D         &kp B              &kp W            &trans             &kp N7             &kp N8         &kp N9       &en APOS      &trans
+                &sh N4     &kp R         &kp N        &kp T         &kp S              &kp G            &kp MINUS          &kp N4             &kp N5         &kp N6       &kp N0        &kp FSLH
+                &sh N6     &kp Q         &kp X        &kp M         &kp C              &kp Z            &trans             &kp N1             &kp N2         &kp N3       &en GRAVE     &sh FSLH
                            &kp TAB       &kp RCLK     &kp BACKSPACE &lt NAV_ENG SPACE  &kp LCLK         &lt NUM_ENG ENTER  &kp TAB            &kp LA(LSHIFT)
             >;
         };
