@@ -17,7 +17,7 @@
 #define NUM_ENG    8
 #define NUM_RUS    9
 #define AUTO_MOUSE 10
-#define SCROLL     11
+#define SCROLL     11_abc
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
