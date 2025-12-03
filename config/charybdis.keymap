@@ -1,4 +1,4 @@
-#include <behaviors/mouse_keys.dtsi>
+#include <behaviors/mouse_keys123.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -17,7 +17,7 @@
 #define NUM_ENG    8
 #define NUM_RUS    9
 #define AUTO_MOUSE 10
-#define SCROLL     11_abc
+#define SCROLL     11
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
